@@ -1,0 +1,55 @@
+CKAD Exam Basics
+
+Certified Kubernetes Application Developer (CKAD) certification 
+	designed to provide assurance that certification holders have 
+		skills, 
+		knowledge, 
+		and competency 
+	to perform the responsibilities of 
+		Kubernetes application developers. 
+	A Certified Kubernetes Application Developer can 
+		define application resources and use core primitives to 
+			build, 
+			monitor, and 
+			troubleshoot 
+		scalable applications and tools in Kubernetes.
+
+
+Exam Cost: $300
+
+
+How is the exam proctored? 
+	System requirements to take the exam? 
+	What are the Testing Environment requirements to take the exam?
+	Expectations for an acceptable testing environment:
+	What are the ID requirements to take the exam? 
+
+Certification Name: Certified Kubernetes Application Developer
+Prerequisites: 
+Number of questions: 19 questions
+Exam Duration: 2 hours
+Passing score: 66% or above
+
+
+1) Core Concepts – 13%
+	Understand Kubernetes API primitives
+
+2) Configuration - 18%
+	Understand ConfigMaps
+	Understand SecurityContexts
+	Define an application’s resource requirements
+	Create & consume Secrets
+	Understand ServiceAccounts
+3) Multi-Container Pods – 10%
+4) Observability – 18%
+	Understand LivenessProbes and ReadinessProbes
+	Understand container logging
+	Understand how to monitor applications in Kubernetes
+	Understand debugging in Kubernetes
+5) Pod Design – 20%
+	Understand Deployments and how to perform rolling updates
+	Understand Deployments and how to perform rollbacks
+	Understand Jobs and CronJobs
+	Understand how to use Labels, Selectors, and Annotations
+6) Services & Networking – 13%
+7) State Persistence – 8%

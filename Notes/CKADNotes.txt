@@ -1,0 +1,510 @@
+https://ravikirans.com/ckad-kubernetes-exam-preparation-guide/
+
+https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
+
+https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-is-the-certified-kubernetes-administrator-cka-certification
+
+
+https://medium.com/faun/be-fast-with-kubectl-1-18-ckad-cka-31be00acc443
+https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
+
+https://ravikirans.com/ckad-kubernetes-exam-preparation-guide/
+
+CKAD Exam Basics
+
+Certified Kubernetes Application Developer (CKAD) certification 
+	designed to provide assurance that certification holders have 
+		skills, 
+		knowledge, 
+		and competency 
+	to perform the responsibilities of 
+		Kubernetes application developers. 
+	A Certified Kubernetes Application Developer can 
+		define application resources and use core primitives to 
+			build, 
+			monitor, and 
+			troubleshoot 
+		scalable applications and tools in Kubernetes.
+
+
+Exam Cost: $300
+
+
+How is the exam proctored? 
+The certification exam is proctored 
+	remotely via streaming 
+		audio, 
+		video, and 
+		screen sharing feeds. 
+	Screensharing feed 
+	allows 
+		proctors to view candidates' desktops 
+			(including all monitors). 
+	feeds will be stored for a limited period of time in the event that there is a subsequent need for review
+		Audio, 
+		video, 
+		and screen sharing .
+
+
+	System requirements to take the exam? 
+	-------------------------------------
+	Exams are delivered online and 
+	Candidates must provide their own computer with:
+		Current version of Chrome or Chromium
+	You don’t need to install a virtual machine, 
+		use a client machine, 
+		or anything beyond a Chrome or Chromium browser
+	Make sure you have third party cookies turned on 
+		for the duration of the exam.
+	Reliable internet access
+	Turn off bandwidth-intensive services 
+		(e.g. file sync, dropbox, BitTorrent)
+	Ask others who may be sharing your Internet connection not to stream video or download large files.
+	Microphone
+		Please check to make sure it is working before you start your exam session.
+	Webcam
+		Ensure the webcam is capable of being moved as the proctor 
+			May ask you to pan your surroundings to check for potential violations of exam policy.
+		Try holding up your ID while viewing your webcam feed to ensure your placement and resolution are sufficient for the person viewing your feed to read your ID.
+		If you will be testing from an employer-provide ISP or 
+			will use an employer provided machine, please ensure that streaming will be allowed using WebRTC.
+		Candidates should run the compatibility check tool to verify that their hard	ware meets the minimum requirements.
+
+
+	What are the Testing Environment requirements to take the exam? 																																																																																																																																																																																
+	---------------------------------------------------------------
+	Below are the expectations for an acceptable testing environment:
+		Clutter-free work area
+	No objects such as 
+		paper
+		writing implements, 
+		electronic devices
+		other objects on top of surface
+	No objects such as 
+		paper, 
+		trash bins, or 
+		other objects below the testing surface
+	Clear walls
+	No paper/print outs hanging on walls
+	Paintings and other wall décor is acceptable
+	Candidates will be asked to remove non-décor items prior to the exam being released
+	Lighting
+	Space must be well lit so that proctor is able to see 
+		candidate’s face, 
+		hands, and 
+		surrounding work area
+	No bright lights or windows behind the examinee
+	Candidate must remain within the camera frame during the exa	mination
+	Space must be private where there is no excessive noise. 
+	Public spaces such as coffee shops, stores, open office environments, etc. are not allowed.
+
+
+
+	What are the ID requirements to take the exam? 
+	----------------------------------------------
+	Candidates are required to provide a 
+		non-expired Primary ID that contains 
+			Candidate’s photograph, 
+			signature and 
+			full name (see acceptable forms of ID in the table below).
+	The name on your 
+		Primary ID must exactly match the 
+			verified name on your exam checklist.
+	If the Candidate’s full name on their Primary ID contains non-latin characters, then the Candidate must ALSO provide a non-expired Secondary ID containing their full name in Latin Characters and signature, OR a notarized 
+	
+	English translation of their Primary ID along with the non-latin character Primary ID.
+		Primary ID 
+		(non-expired and including photograph and signature)
+		Secondary ID 
+		(non-expired and including signature 
+		with Candidate name in Latin characters)
+		Passport
+		Government-issued driver’s license/permit
+		Government-Issued local language ID (with photo and signature) 
+		National Identity card
+		State or province-issued identity card																					(Basic resident register with Photo)
+		Debit (ATM) Card
+		Credit Card
+		Health Insurance Card
+		U.S. Social Security Card
+		Additional Allowances:
+		Some government issued ID such as a 
+			passport, 
+			driver’s license, 
+			military ID or state/country card 
+				may be a biometric type 
+				may or may not contain a signature. 
+		Primary ID will be accepted without a signature on condition 
+			present a Secondary ID with signature (e.g. bank, credit or debit card)
+
+	For candidates testing in Japan, a Driver’s License (with name and recent recognizable photo) is acceptable as a primary ID as long as it is accompanied with a valid Blue Japanese Health Card. In Japan, the Blue Japanese Health Card is an acceptable form of secondary ID.
+
+	Minors, between the age of 16-18,  are permitted to take an online proctored exam with PSI, provided they complete the following requirements:
+	A Parent/Guardian must complete the Parental Release for Testing of Minors form, and submit it to certificationsupport@linuxfoundation.org, at least 2 weeks prior to the scheduled date of the exam
+	At check in, the minor candidate must present a valid student ID as a form of identification
+	During the PSI check-in process, the candidate's guardian must also present a valid ID and must provide verbal consent during the PSI check-in process.
+	Exams may be administered to citizens of a sanctioned country listed below PROVIDED the citizens are tested OUTSIDE the sanctioned country and their exam registration and current ID show an address OUTSIDE the sanctioned country.
+		Cuba
+		Iran
+		Syria
+		Sudan
+		North Korea
+		Crimea Region of Ukraine
+
+
+
+Certification Name: Certified Kubernetes Application Developer
+Prerequisites: There are no prerequisites needed apart from the software development experience.
+Number of questions: 19 questions
+Exam Duration: 2 hours
+Passing score: 66% or above
+
+
+1) Core Concepts – 13%
+	Understand Kubernetes API primitives
+	Understand Kubernetes API primitives
+
+		
+	
+	https://kubernetes.io/docs/concepts/overview/kubernetes-api/
+	https://cloudnative101.dev/lectures/kube-core-concepts/
+
+
+	The Kubernetes API
+-----------------------------
+	The core of Kubernetes' control plane is the API server. 
+	API server A/
+	-----------
+	Exposes an HTTP API that lets 
+		end users, 
+		different components of your cluster
+		external components communicate with one another.
+
+	Lets you 
+		query 
+		manipulate 
+		the state of objects in the Kubernetes API 
+		(for example: Pods, Namespaces, ConfigMaps, and Events).
+
+	Most operations can be performed through the 
+		kubectl command-line interface or 
+		other command-line tools
+			e.g. kubeadm
+				in turn use the API
+	You can also access the API directly using REST calls.
+
+	Consider using one of the client libraries if you are writing an application using the Kubernetes API.
+
+	Complete API details are documented using OpenAPI.
+	https://www.openapis.org/
+	
+	The Kubernetes API server serves an OpenAPI spec via the 
+		/openapi/v2 endpoint. You can request the response format using request headers as follows:
+
+	Header	Possible values	Notes
+	Accept-Encoding	gzip	not supplying this header is also acceptable
+	A given release of Kubernetes can support any number of API groups and any number of versions of each.
+
+The following rules govern the deprecation of elements of the API. This includes:
+
+REST resources (aka API objects)
+Fields of REST resources
+Annotations on REST resources, including "beta" annotations but not including "alpha" annotations.
+Enumerated or constant values
+Component config structures
+These rules are enforced between official releases, not between arbitrary commits to master or release branches.																												
+		application/com.github.proto-openapi.spec.v2@v1.0+protobuf	mainly for intra-cluster use
+	application/json	default
+	*	serves application/json
+	Kubernetes 
+		implements alternative Protobuf based serialization format that is primarily intended for intra-cluster communication. For more information about this format, see the Kubernetes Protobuf serialization design proposal and the Interface Definition Language (IDL) files for each schema located in the Go packages that define the API objects.
+
+	API changes 
+	-------------
+	Grow = Change 
+	Designed to continuously change and grow. 
+	Not break compatibility with existing clients
+		Maintain that compatibility for long period.
+
+	In general, 
+		new API resources 
+		new resource fields 
+			can be added often and frequently. 
+		
+	Elimination of 
+		resources or 
+		fields 
+		requires following the API deprecation policy.
+			https://kubernetes.io/docs/reference/using-api/deprecation-policy/	
+		The following rules govern the deprecation of elements of the API. This includes:
+
+			REST resources (aka API objects)
+			Fields of REST resources
+			Annotations on REST resources, including "beta" annotations but not including "alpha" annotations.
+			Enumerated or constant values
+			Component config structures
+
+		Rules
+			Rule #1: API elements may only be 
+				REMOVED by incrementing the version of the API group.
+			Rule #2: API objects must be able to 
+				round-trip between API versions 
+				in a given release 
+				without information loss, 
+				with the exception of whole REST resources that do not exist in some versions.
+				For example, an object can be written as v1 and then read back as v2 and converted to v1, and the resulting v1 resource will be identical to the original. 
+			Rule #3: An API version in a given track may not be deprecated until a new API version at least as stable is released.
+			Rule #4a: Other than the most recent API versions in each track, older API versions must be supported after their announced deprecation for a duration of no less than:
+
+				GA: 12 months or 3 releases (whichever is longer)
+				Beta: 9 months or 3 releases (whichever is longer)
+				Alpha: 0 releases
+				
+			Rule #4b: The "preferred" API version and the "storage version" for a given group may not advance until after a release has been made that supports both the new version and the previous version
+			
+			There are similar deprecation policy - kindly refer https://kubernetes.io/docs/reference/using-api/deprecation-policy/
+			
+	Standard API change practices
+		https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md#readme
+	
+API groups and versioning
+	Eliminate 
+		fields or 
+		restructure resource representations			, Kubernetes supports multiple API versions, each at a different API path, such as /api/v1 or /apis/rbac.authorization.k8s.io/v1alpha1.
+
+	Versioning is done at the API level 
+		Not at the 
+			resource or 
+			field level 
+				ensure API presents clear, consistent view 
+				enable controlling access to end-of-life and/or experimental APIs.
+
+	API resources are distinguished by their 
+		API group, 
+		resource type, 
+		namespace 
+		name.
+	Kubernetes API groups 
+		can be enabled or disabled.
+	The API server may serve the same underlying data through multiple 
+		API version 
+		handle the conversion between API versions transparently. 
+		Multiple versions can represent the same resource. 
+	For example, 
+		two versions v1 and v1beta1 for the same resource. 
+		An object created by the v1beta1 version 
+		can be read, updated, and deleted by 
+			v1beta1 or 
+			v1 versions.
+
+
+
+Refer to API versions reference for more details on the API version level definitions.
+
+API Extension
+The Kubernetes API can be extended in one of two ways:
+
+Custom resources let you declaratively define how the API server should provide your chosen resource API.
+You can also extend the Kubernetes API by implementing an aggregation layer.
+
+	API Extension
+	The Kubernetes API can be extended in one of two ways:
+
+
+------------------------------------------------------------------------------------------------------
+https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/	
+
+
+Accessing Kubernetes API first time?
+	Use kubectl
+	
+	To access a cluster
+		you need 
+			location of the cluster 
+			credentials to access it. 
+	This is automatically setup while using kubeadm guide we following our steps
+	
+	Check the location and credentials that kubectl knows about with this command:
+		kubectl config view
+
+	Refer
+	D:\PraiseTheLord\HSBGInfotech\Others\vilas\ckad\Labs\RestAPI\Instructions.txt
+
+
+
+----------------------------------------------------------
+
+
+2) Configuration - 18%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Understand ConfigMaps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	ConfigMap 
+		API object 
+		Store non-confidential data in key-value pairs. 
+		not designed to hold large chunks of data. 
+			<= 1 MiB. 
+		Consider volume for value larger than 1 MiB.
+		Separate configuration and application code.
+	for e.g. In cloud
+		tenant name
+		tenant icon
+		ect can be configuration properties.
+
+	
+	ConfigMap API Objecthas
+		Has no spec
+		has data and binaryData fields. 
+		accepts key-value pairs as their values. 
+		Both the data field and the binaryData are optional. 
+		Field designed to contain UTF-8 byte sequences 
+			binaryData field is designed to contain binary data.
+
+	ConfigMap must be a valid DNS subdomain name.
+
+	Each key under the data or the binaryData field 
+		must consist of alphanumeric characters, 
+			-, _ or .. 
+			The keys stored in data must not overlap with the keys in the binaryData field.
+
+	Starting from v1.19, you can add an immutable field to a ConfigMap definition to create an immutable ConfigMap.
+
+	ConfigMaps and Pods
+		Pod 
+			refer to ConfigMap 
+			configures the container(s) based on ConfigMap. 
+		Pod and ConfigMap must be in the same namespace.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Troubleshooting tip: Pod not getting data from ConfigMap.
+Are they from the same namespace.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Here's an example ConfigMap that has some keys with single values, and other keys where the value looks like a fragment of a configuration format.
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: game-demo
+data:
+  # property-like keys; each key maps to a simple value
+  player_initial_lives: "3"
+  ui_properties_file_name: "user-interface.properties"
+
+  # file-like keys
+  game.properties: |
+    enemy.types=aliens,monsters
+    player.maximum-lives=5
+  user-interface.properties: |
+    color.good=purple
+    color.bad=yellow
+    allow.textmode=true		
+
+
+
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand SecurityContexts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Define an application’s resource requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Create & consume Secrets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand ServiceAccounts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+		https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+		https://kubernetes.io/docs/concepts/workloads/pods/#using-pods
+		https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/
+		https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-initialization/
+		https://kubernetes.io/docs/tasks/configure-pod-container/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3) Multi-Container Pods – 10%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Understand Multi-Container Pod design patterns (e .g. ambassador, adapter, sidecar)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/
+	https://kubernetes.io/blog/2015/06/the-distributed-system-toolkit-patterns/
+	https://matthewpalmer.net/kubernetes-app-developer/articles/multi-container-pod-design-patterns.html
+	
+	Ambassador
+	https://docs.microsoft.com/en-us/azure/architecture/patterns/ambassador
+	https://www.magalix.com/blog/kubernetes-patterns-the-ambassador-pattern
+	https://bjammal.github.io/2019-08-25-ambasador-pattern/
+	
+	Adapter
+	https://www.magalix.com/blog/the-adapter-pattern
+	https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-adaptor-container-pattern-97674285983c
+	https://www.vinsguru.com/kubernetes-adapter-pattern-implementation/
+
+	Sidecar
+	https://www.magalix.com/blog/the-sidecar-pattern
+	https://thenewstack.io/tutorial-apply-the-sidecar-pattern-to-deploy-redis-in-kubernetes/
+	https://medium.com/bb-tutorials-and-thoughts/kubernetes-learn-sidecar-container-pattern-6d8c21f873d
+
+4) Observability – 18%
+	Understand LivenessProbes and ReadinessProbes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand container logging
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand how to monitor applications in Kubernetes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand debugging in Kubernetes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+	https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#when-should-you-use-a-liveness-probe
+	https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes
+	https://cloud.google.com/kubernetes-engine/docs/concepts/configmap
+	https://kubernetes.io/docs/concepts/cluster-administration/logging/
+	https://kubectl.docs.kubernetes.io/pages/container_debugging/container_logs.html
+	
+	https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#logs
+	https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/
+	
+	https://logz.io/blog/kubernetes-monitoring/
+	https://blog.newrelic.com/engineering/monitoring-application-performance-in-kubernetes/
+	
+	https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
+	https://kubernetes.io/docs/tasks/debug-application-cluster/debug-pod-replication-controller/
+	https://kubernetes.io/docs/tasks/debug-application-cluster/debug-running-pod/
+	
+
+
+5) Pod Design – 20%
+	Understand Deployments and how to perform rolling updates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand Deployments and how to perform rollbacks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Understand Jobs and CronJobs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Understand how to use Labels, Selectors, and Annotations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+
+https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment
+https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
+https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
+https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/
+https://kubectl.docs.kubernetes.io/pages/app_management/labels_and_annotations.html
+	
+
+6) Services & Networking – 13%
+	Understand Services
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	Demonstrate a basic understanding of network policies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	https://kubernetes.io/docs/concepts/services-networking/service/
+	https://kubernetes.io/docs/concepts/services-networking/service-topology/
+	https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/
+	https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+	https://kubernetes.io/docs/concepts/services-networking/network-policies/
+	https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/
+	https://github.com/ahmetb/kubernetes-network-policy-recipes
+	
+7) State Persistence – 8%
+	Understand PersistentVolumeClaims for storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+	https://docs.cloud.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcreatingpersistentvolumeclaim.htm
+	https://kubernetes.io/docs/concepts/storage/volumes/
+	https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+	https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/

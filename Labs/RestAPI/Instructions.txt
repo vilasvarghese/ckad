@@ -1,0 +1,51 @@
+Directly accessing the REST API
+-------------------------------
+Based on kubernetes documentation: https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/
+
+	kubectl handles locating and authenticating to the API server. 
+	
+	To directly access the REST API 
+		e.g using
+			
+			curl 
+			wget
+			browser
+			
+	Multiple ways to locate and authenticate against the API server:
+		Run kubectl in proxy mode 
+			Recommended
+			Uses the stored apiserver location 
+			Verifies the identity of the API server using a self-signed cert. 
+			No man-in-the-middle (MITM) attack is possible using this method.
+		Directly provide the location and credentials to the http client. 
+			Works with client code 
+			To protect against man in the middle attacks
+				import a root cert into your browser.
+
+Using the Go or Python client libraries provides accessing kubectl in proxy mode.
+
+1.		Using kubectl proxy
+		-------------------
+	The following command runs kubectl as a reverse proxy. 
+	It handles locating the API server and authenticating.
+
+	kubectl proxy --port=8080 &
+	See kubectl proxy for more details.
+	Then you can explore the API with curl, wget, or a browser, like so:
+
+	curl http://localhost:8080/api/
+	The output is similar to this:
+
+	{
+	  "versions": [
+		"v1"
+	  ],
+	  "serverAddressByClientCIDRs": [
+		{
+		  "clientCIDR": "0.0.0.0/0",
+		  "serverAddress": "10.0.1.149:443"
+		}
+	  ]
+	}
+	
+2. Direct access
