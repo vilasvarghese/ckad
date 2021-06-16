@@ -1,0 +1,5 @@
+cd ckad/Labs/ConfigMaps/
+1. Create a ConfigMap with keys having single values
+	kubectl create -f ConfigMapWithSingleValue.yaml
+
+2.

@@ -378,7 +378,9 @@ Accessing Kubernetes API first time?
 Troubleshooting tip: Pod not getting data from ConfigMap.
 Are they from the same namespace.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	Here's an example ConfigMap that has some keys with single values, and other keys where the value looks like a fragment of a configuration format.
+Example ConfigMap 
+	keys with single values
+
 
 apiVersion: v1
 kind: ConfigMap
