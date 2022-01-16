@@ -1,14 +1,15 @@
-https://ravikirans.com/ckad-kubernetes-exam-preparation-guide/
+Curriculum
+	https://github.com/cncf/curriculum
 
-https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
-
-https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-is-the-certified-kubernetes-administrator-cka-certification
-
-
-https://medium.com/faun/be-fast-with-kubectl-1-18-ckad-cka-31be00acc443
-https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
-
-https://ravikirans.com/ckad-kubernetes-exam-preparation-guide/
+References beyond my repo.
+	https://github.com/dgkanatsios/CKAD-exercises
+	https://github.com/bmuschko/ckad-crash-course
+	https://github.com/bmuschko/ckad-prep
+	https://ravikirans.com/ckad-kubernetes-exam-preparation-guide/
+	https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks
+	https://docs.linuxfoundation.org/tc-docs/certification/faq-cka-ckad-cks#what-is-the-certified-kubernetes-administrator-cka-certification
+	https://medium.com/faun/be-fast-with-kubectl-1-18-ckad-cka-31be00acc443
+	https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
 
 CKAD Exam Basics
 
